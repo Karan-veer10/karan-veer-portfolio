@@ -2,27 +2,17 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets"
-public_folder: "/assets"
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
 
 collections:
-  - name: "site"
-    label: "Site Content"
+  - name: "content"
+    label: "Portfolio Content"
     files:
-      - name: "about"
-        label: "About Me"
-        file: "index.html"
+      - file: "index.html"
+        label: "Home Page"
+        name: "homepage"
         fields:
-          - { label: "About Text", name: "body", widget: "text" }
-
-      - name: "projects"
-        label: "Projects"
-        file: "index.html"
-        fields:
-          - { label: "Project Section", name: "body", widget: "text" }
-
-      - name: "contact"
-        label: "Contact"
-        file: "index.html"
-        fields:
-          - { label: "Contact Info", name: "body", widget: "text" }
+          - { label: "About", name: "about", widget: "text" }
+          - { label: "Projects", name: "projects", widget: "text" }
+          - { label: "Contact", name: "contact", widget: "text" }

@@ -7,11 +7,11 @@ public_folder: "/assets/uploads"
 
 collections:
   - name: "content"
-    label: "Portfolio Content"
+    label: "Site Content"
     files:
-      - file: "index.html"
-        label: "Home Page"
+      - label: "Home Page"
         name: "homepage"
+        file: "content/home.md"
         fields:
           - { label: "About", name: "about", widget: "text" }
           - { label: "Projects", name: "projects", widget: "text" }
